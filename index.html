@@ -10,17 +10,29 @@
 
     <body>
         <header>
-            <h1>Welcome</h1>
+            <h1>Welcome to Bec's JavaScript Exercises</h1>
         </header>
 
         <div class="component">
-            <h2>Number</h2>
+            <h2>Number Increment</h2>
             <form>
                 <input type="text" id="number" value="0"/>
                 <input type="button" onclick="increment()" value="increment">
                 <input type="button" onclick="decrement()" value="decrement">
             </form>
         </div>
+
+        <div class="list">
+            <h2>Add to Cart</h2>
+            <p>Add some items to your cart</p>
+            <textarea type="text" id="cart"></textarea>
+            <ul>
+                <li>Chocolate cupcake - $3</li><input type="button" onclick="cart('Chocolate cupcake')" value="add to cart">
+                <li>Vanilla cupcake - $3</li><input type="button" onclick="cart('Vanilla cupcake')" value="add to cart">
+                <li>Sprinkle cupcake - $3</li><input type="button" onclick="cart('Sprinkle cupcake')" value="add to cart">
+            </ul>
+        </div>
+
 
 
         <script src="script.js"></script>
