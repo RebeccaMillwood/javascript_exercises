@@ -8,4 +8,3 @@ function increment(){
     value++;
     document.getElementById('number').value = value;
 }
-
